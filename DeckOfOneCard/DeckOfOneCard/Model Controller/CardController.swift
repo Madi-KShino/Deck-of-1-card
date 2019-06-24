@@ -24,7 +24,7 @@ class CardController {
         do {
             let data = try Data(contentsOf: url)
             let jsdecoder = JSONDecoder()
-            let topLevelJson = JSONDecoder.decode(TopLevelJSON.self, from: data)
+            let topLevelJson = try jsdecoder.decode(TopLevelJSON.self, from: data)
             let card = topLevelJson.cards[0]
             completion(card)
         } catch {

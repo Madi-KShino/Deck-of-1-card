@@ -13,6 +13,7 @@
 		53C1D61422C135E500826354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D61222C135E500826354 /* LaunchScreen.storyboard */; };
 		53C1D61E22C13A2300826354 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D61D22C13A2300826354 /* Cards.swift */; };
 		53C1D62122C140D000826354 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D62022C140D000826354 /* CardController.swift */; };
+		53C1D62522C14BFE00826354 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D62422C14BFE00826354 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		53C1D61522C135E500826354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53C1D61D22C13A2300826354 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		53C1D62022C140D000826354 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		53C1D62422C14BFE00826354 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				53C1D61C22C1361200826354 /* View */,
 				53C1D61F22C13C2B00826354 /* Model */,
 				53C1D62222C140D900826354 /* Model Controller */,
+				53C1D62322C14BDD00826354 /* View Controller */,
 			);
 			path = DeckOfOneCard;
 			sourceTree = "<group>";
@@ -97,6 +100,14 @@
 				53C1D62022C140D000826354 /* CardController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		53C1D62322C14BDD00826354 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D62422C14BFE00826354 /* CardViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C1D62522C14BFE00826354 /* CardViewController.swift in Sources */,
 				53C1D60A22C135E300826354 /* AppDelegate.swift in Sources */,
 				53C1D62122C140D000826354 /* CardController.swift in Sources */,
 				53C1D61E22C13A2300826354 /* Cards.swift in Sources */,
