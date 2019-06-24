@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		53C1D60A22C135E300826354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D60922C135E300826354 /* AppDelegate.swift */; };
-		53C1D60C22C135E300826354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D60B22C135E300826354 /* ViewController.swift */; };
 		53C1D60F22C135E300826354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D60D22C135E300826354 /* Main.storyboard */; };
 		53C1D61122C135E500826354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D61022C135E500826354 /* Assets.xcassets */; };
 		53C1D61422C135E500826354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D61222C135E500826354 /* LaunchScreen.storyboard */; };
+		53C1D61E22C13A2300826354 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D61D22C13A2300826354 /* Cards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53C1D60622C135E300826354 /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C1D60922C135E300826354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53C1D60B22C135E300826354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53C1D60E22C135E300826354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53C1D61022C135E500826354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C1D61322C135E500826354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53C1D61522C135E500826354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C1D61D22C13A2300826354 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				53C1D60822C135E300826354 /* DeckOfOneCard */,
+				53C1D61B22C135F300826354 /* Resources */,
 				53C1D60722C135E300826354 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +55,37 @@
 		53C1D60822C135E300826354 /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				53C1D61C22C1361200826354 /* View */,
+				53C1D61F22C13C2B00826354 /* Model */,
+			);
+			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		53C1D61B22C135F300826354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				53C1D60922C135E300826354 /* AppDelegate.swift */,
-				53C1D60B22C135E300826354 /* ViewController.swift */,
-				53C1D60D22C135E300826354 /* Main.storyboard */,
 				53C1D61022C135E500826354 /* Assets.xcassets */,
 				53C1D61222C135E500826354 /* LaunchScreen.storyboard */,
 				53C1D61522C135E500826354 /* Info.plist */,
 			);
-			path = DeckOfOneCard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53C1D61C22C1361200826354 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D60D22C135E300826354 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53C1D61F22C13C2B00826354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D61D22C13A2300826354 /* Cards.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53C1D60C22C135E300826354 /* ViewController.swift in Sources */,
 				53C1D60A22C135E300826354 /* AppDelegate.swift in Sources */,
+				53C1D61E22C13A2300826354 /* Cards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
